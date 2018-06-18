@@ -1,0 +1,21 @@
+/* Formas de crear css:*/
+/* Etiqueta */
+h1, h2 {
+    /* nombre-propiedad:valor-propiedad; */
+    color: orangered;
+}
+
+/* clase */
+.bg-green {
+    background-color: greenyellow;
+}
+
+
+
+.borde-cafe {
+    border-style: solid;
+    border-width: 3px;
+    border-color: brown;
+}
+
+/* (style) */

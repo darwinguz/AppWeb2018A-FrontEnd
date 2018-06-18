@@ -80,7 +80,10 @@
 <form action="http://localhost:3000/" method="get">
     <button type="button">No hago nada</button>
     <button type="submit">Enviar</button>
-    <!-- Al realizar submit ejecuta la action del form-->
+    <button type="reset">Reset</button>
+    <!-- Al realizar submit ejecuta la action del form, reset limpia los valores de los inputs, el button nada a menos q quiera algo especifico-->
+
+
 </form>
 
 <h2>Formulario 2</h2>
@@ -90,6 +93,30 @@
     <button type="button">No hago nada</button>
     <button type="submit">Enviar</button>
 </form>
+
+<h2>IFrames 1 - SAEW</h2>
+<iframe id="saew" src="https://saew.epn.edu.ec/" frameborder="0" width="1200"
+        height="700"></iframe>
+<h2>IFrames 2 - GOOGLE</h2>
+<iframe src="https://www.google.com.ec" frameborder="0" width="1200"
+        height="700"></iframe>
+<h2>IFrames 3 - LOCALHOST NESTJS</h2>
+<iframe src="http://localhost:3000" frameborder="0" width="1200"
+        height="700"></iframe>
+
+<br><br><br><br>
+<script>document.addEventListener("keypress", function (evento) {
+    console.log(evento)
+})</script>
+
+<script>
+    var etiquetaSaew = document.getElementById("saew");
+    etiquetaSaew.contentWindow.addEventListener("keypress",function (evento) {
+        console.log(evento)
+    })
+</script>
+
+
 </body>
 </html>
 
